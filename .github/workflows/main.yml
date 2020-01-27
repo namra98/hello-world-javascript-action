@@ -5,19 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+    - name: Cehckout
+      uses: actions/checkout@v2
     - name: Hello world action step
+      uses: ./
       id: hello
-      uses: actions/hello-world-javascript-action@v1
       with:
-        who-to-greet: 'Mona the Octocat'
-    # Use the output from the `hello` step
-    - name: Get the output time
+        who-to-greet: 'Namra'
+    - name: Get output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
-  useless-job:
-    runs-on: windows-latest
-    name: A job to use windwos
-    steps:
-    - name: pwd in windows
-      id: pwd
-      run: pwd
-
