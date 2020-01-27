@@ -17,7 +17,7 @@ jobs:
     runs-on: windows-latest
     name: A job to use windwos
     steps:
-      name: pwd in windows
+    - name: pwd in windows
       id: pwd
       run: pwd
 
