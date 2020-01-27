@@ -1,7 +1,7 @@
 {
   "name": "hello-world-action",
   "version": "1.0.0",
-  "description": "",
+  "description": "This action prints \"Hello World\" or \"Hello\" + the name of a person to greet to the log.",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -17,5 +17,14 @@
     "@actions/core": "^1.2.2",
     "@actions/github": "^2.1.0",
     "typescript-action": "file:toolkit"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namra98/hello-world-javascript-action.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/namra98/hello-world-javascript-action/issues"
+  },
+  "homepage": "https://github.com/namra98/hello-world-javascript-action#readme"
 }
