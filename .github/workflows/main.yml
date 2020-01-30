@@ -1,8 +1,9 @@
 on: [push]
 
+
 jobs:
   hello_world_job:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     name: A job to say hello
     steps:
     - name: Cehckout
@@ -11,6 +12,6 @@ jobs:
       uses: ./
       id: hello
       with:
-        who-to-greet: 'Octocat'
+        who-to-greet: 'Namra'
     - name: Get output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
